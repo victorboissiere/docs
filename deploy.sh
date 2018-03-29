@@ -13,7 +13,7 @@ if ! [ $(hostname) = "victors-macbook-pro-2.home" ]; then
     fi
 fi
 
-scp -P 8923 -o StrictHostKeyChecking=no -r site/. ${VPS}
+rsync --delete -e 'ssh -p 8923 -o StrictHostKeyChecking=no' -r site/. victor@root.gitcommit.fr:ovh-docker/web/docs
 
 if [ $(hostname) = "victors-macbook-pro-2.home" ]; then
   terminal-notifier -title 'Done!' -message "Front deployed!" -activate 'com.apple.Terminal' -sound Ping
