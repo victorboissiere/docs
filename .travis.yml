@@ -1,5 +1,7 @@
 language: python
 
+cache: pip
+
 before_install:
   - openssl aes-256-cbc -K $encrypted_06f6a8cb1961_key -iv $encrypted_06f6a8cb1961_iv -in vps.enc -out vps -d
   - chmod 600 vps
