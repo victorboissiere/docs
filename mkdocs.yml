@@ -1,0 +1,45 @@
+site_name: GitCommit docs
+theme:
+  name: material
+  custom_dir: 'theme'
+  palette:
+    primary: 'blue grey'
+    accent: 'pink'
+  logo:
+    icon: extension
+  feature:
+    tabs: true
+repo_name: 'victorboissiere/docs'
+repo_url: 'https://github.com/victorboissiere/docs'
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/victorboissiere'
+    - type: 'twitter'
+      link: 'https://twitter.com/victorboissiere'
+    - type: 'linkedin'
+      link: 'https://linkedin.com/in/victorboissiere'
+copyright: 'Copyright &copy; 2018 Victor Boissiere'
+markdown_extensions:
+  - toc:
+      permalink: true
+  - footnotes
+  - codehilite
+  - admonition
+  - meta
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
