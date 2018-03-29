@@ -2,7 +2,7 @@
 
 [Vagrant boxes](https://app.vagrantup.com/boxes/search)
 
-[Vagrant scp to copy files](https://app.vagrantup.com/boxes/search)
+[Vagrant scp to copy files](https://github.com/invernizzi/vagrant-scp)
 
 ## Demo Vagrantfile
 
