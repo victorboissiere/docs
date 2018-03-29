@@ -1,5 +1,3 @@
-hero: Services commands
-
 ## General
 
 ```bash

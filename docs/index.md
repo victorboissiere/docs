@@ -1,5 +1,3 @@
-hero: Personnal documentation
-
 # Home
 
 Welcome on my personnal documentation

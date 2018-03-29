@@ -27,7 +27,7 @@ Very good documentation → [vim tips and tricks: registers](https://www.cs.ober
 * `Gstatus` view status:
   * `-` add/reset file
   * `Enter` view the file current window
-  * `C` invoke `:Gcommit` 
+  * `C` invoke `:Gcommit`
   * `C-p` and `C-n` to move between file
 * `Gwrite` to stage current file
 * `GBrowser` to view on Github
@@ -36,7 +36,7 @@ Very good documentation → [vim tips and tricks: registers](https://www.cs.ober
   * `\]q` next
   * Do not forget `:cw` for quick view
 * `Glog --` display all commits
-* `Ggrep finds` 
+* `Ggrep finds`
 
 ## Regex
 

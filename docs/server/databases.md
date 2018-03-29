@@ -1,5 +1,3 @@
-hero: Databases cheat sheet
-
 ## PostgreSQL
 
 ### Shell
