@@ -1,4 +1,4 @@
-## Setup travis deployment
+## Setup travis ssh key
 
 Easy setup for public repository.
 
@@ -27,4 +27,35 @@ before_install:
   - chmod 600 deploy_key
   - eval $(ssh-agent -s)
   - ssh-add deploy_key
+```
+
+## Deployment script
+
+Example file
+
+```bash
+#!/usr/bin/env bash
+
+set -e
+
+if ! [ $(hostname) = "local-hostname" ]; then
+    echo "current branch: $TRAVIS_BRANCH"
+    echo "pull request: $TRAVIS_PULL_REQUEST"
+    if [[ $TRAVIS_BRANCH != 'master' || $TRAVIS_PULL_REQUEST != "false" ]]; then
+      echo "only deploying on the master git branch"
+      exit 0;
+    fi
+fi
+
+# Build tasks
+...
+
+rsync --delete -e "ssh -p 22 -o StrictHostKeyChecking=no" -r site/. user@myserver:dest
+
+if [ $(hostname) = "local-hostname" ]; then
+  # Mac only
+  terminal-notifier -title 'Done!' -message "Project deployed!" -activate 'com.apple.Terminal' -sound Ping
+  # Linux (tested with Ubuntu)
+  notify-send "Project deployed"
+fi
 ```
