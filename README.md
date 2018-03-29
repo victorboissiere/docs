@@ -1,5 +1,7 @@
 # Docs
 
+[![Build Status](https://travis-ci.org/victorboissiere/docs.svg?branch=master)](https://travis-ci.org/victorboissiere/docs)
+
 My personnal documentation.
 
 ## Installation & build
