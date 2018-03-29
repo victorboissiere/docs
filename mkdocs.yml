@@ -3,7 +3,7 @@ theme:
   name: material
   custom_dir: 'theme'
   palette:
-    primary: 'blue grey'
+    primary: 'teal'
     accent: 'pink'
   logo:
     icon: extension

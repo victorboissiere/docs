@@ -26,3 +26,18 @@ pg_dump dbname | gzip > filename.gz # Large database
 psql dbname < infile
 gunzip -c filename.gz | psql dbname # Large database
 ```
+
+## ElasticSearch
+
+**Get number of primary shards on each nodes**
+
+```bash
+curl -s elasticsearch:9200/_cat/shards?h=node,prirep | awk '
+$2 == "p" {
+  result[$1] += 1; total += 1
+}
+END {
+  for (var in result)
+    printf "%s\t%s (%0.2f%%)\n",var,result[var],result[var]/total*100
+}'
+```
