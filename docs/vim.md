@@ -7,7 +7,7 @@ Very good documentation → [vim tips and tricks: registers](https://www.cs.ober
 
 ## Registers
 
-*Very handy what you want to get back what you've **deleted***
+Very handy when you want to get back what you've **deleted**
 
 * `:reg` to see all of them
 * `"3p` to paste content to 3rd register
