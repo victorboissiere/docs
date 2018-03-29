@@ -1,3 +1,9 @@
+# Updating gitignore
+
+```bash
+git rm -r --cached .
+```
+
 ## Submodules
 
 Fetching new repository.
