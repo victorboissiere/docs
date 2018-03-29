@@ -4,6 +4,8 @@
 
 My personnal documentation.
 
+[View docs online](https://docs.gitcommit.fr)
+
 ## Installation & build
 
 ```bash
