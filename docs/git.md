@@ -1,4 +1,4 @@
-# Updating gitignore
+## Updating gitignore
 
 ```bash
 git rm -r --cached .
