@@ -1,5 +1,3 @@
-title: SSH
-
 ## Config
 
 Config example
