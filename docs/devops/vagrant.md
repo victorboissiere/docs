@@ -24,3 +24,22 @@ Vagrant.configure("2") do |config|
   end
 end
 ```
+
+Multiple VMs
+
+```ruby
+Vagrant.configure("2") do |config|
+  (1..3).each do |n|
+    config.vm.define "server#{n}" do |define|
+      define.vm.box = "consumerlab/ubuntu-server-16-04-LTS"
+      define.ssh.insert_key = false
+      define.vm.hostname = "server#{n}"
+      define.vm.network :private_network, ip: "10.0.15.2#{n}"
+
+      define.vm.provider "virtualbox" do |node|
+        node.name = "server#{n}"
+      end
+    end
+  end
+end
+```
