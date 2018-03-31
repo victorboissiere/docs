@@ -41,8 +41,11 @@ User=web
 Group=web
 WorkingDirectory=/home/web/
 ExecStart=echo service
+Restart=always
+RestartSec=10
 StandardOutput=syslog
 StandardError=syslog
+SyslogIdentifier=gammu
 
 [Install]
 WantedBy=multi-user.target
