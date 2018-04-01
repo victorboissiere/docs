@@ -22,9 +22,9 @@ systemctl list-unit-files
 
 ## Service checks
 
-- dns `dnsmasq --test`
-- haproxy `haproxy -c -V -f /etc/haproxy/haproxy.cfg`
-- lorotate `sudo logrotate -d /etc/logrotate.d/myfile`
+- dns `#!bash dnsmasq --test`
+- haproxy `#!bash haproxy -c -V -f /etc/haproxy/haproxy.cfg`
+- lorotate `#!bash sudo logrotate -d /etc/logrotate.d/myfile`
 
 ## Create service
 
