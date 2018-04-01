@@ -30,7 +30,7 @@ systemctl list-unit-files
 
 Simple service (daemon managed by systemd).
 
-```
+```bash
 [Unit]
 Description=Example service
 After=syslog.target
