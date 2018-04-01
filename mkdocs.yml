@@ -19,6 +19,8 @@ extra:
       link: 'https://twitter.com/victorboissiere'
     - type: 'linkedin'
       link: 'https://linkedin.com/in/victorboissiere'
+    - type: 'youtube'
+      link: 'https://www.youtube.com/channel/UCgHlbMrsG2iBAguUQWbmD9Q'
 copyright: 'Copyright &copy; 2018 Victor Boissiere'
 markdown_extensions:
   - toc:
@@ -32,6 +34,7 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
+  - pymdownx.keys
   - pymdownx.details
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
