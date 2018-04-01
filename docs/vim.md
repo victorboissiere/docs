@@ -24,16 +24,16 @@ Very handy when you want to get back what you've --deleted--
 
 - `Gdiff` view diff
 - `Gstatus` view status:
-  - `-` add/reset file
-  - `Enter` view the file current window
-  - `C` invoke `:Gcommit`
-  - `C-p` and `C-n` to move between file
+    - `-` add/reset file
+    - `Enter` view the file current window
+    - `C` invoke `:Gcommit`
+    - `C-p` and `C-n` to move between file
 - `Gwrite` to stage current file
 - `GBrowser` to view on Github
 - `Glog` display all commit for current file
-  - `\[q` previous
-  - `\]q` next
-  - Do not forget `:cw` for quick view
+    - `\[q` previous
+    - `\]q` next
+    - Do not forget `:cw` for quick view
 - `Glog --` display all commits
 - `Ggrep finds`
 
