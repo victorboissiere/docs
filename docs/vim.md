@@ -2,8 +2,7 @@ Very good documentation → [vim tips and tricks: registers](https://www.cs.ober
 
 ## Clipboard
 
-- `"\-` choose the clipboard register
-- `"\-y` copy lines to clipboard register
+- `"*y` copy current line/selection to clipboard register
 
 ## Registers
 
