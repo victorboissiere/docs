@@ -16,6 +16,16 @@ Very handy when you want to get back what you've --deleted--
 - `:ls` will show your open buffers
 - `:b` <number> will open the specified buffer in the current pane.
 
+## Search and replace
+
+- `%s`: all lines
+- `s`: current line onlye
+- `a,bs`: line a to b (inclusive)
+- `.,$s`: current line (.) to end
+- `.,+ns`: current line (.) to n line below
+
+[Check out more examples](http://vim.wikia.com/wiki/Search_and_replace)
+
 ## Editing a stream
 
 `:! find . | vim -`  in a shell get content and send it to vim then `:w filename` to save the file
