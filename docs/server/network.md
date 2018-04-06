@@ -25,5 +25,5 @@ nc -zv website  80
 Check public IP
 
 ```bash
-curl ipinfo.io/ip
+curl ip.gitcommit.fr
 ```
