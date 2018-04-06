@@ -19,3 +19,11 @@ sudo stdbuf -oL -eL /usr/sbin/tcpdump -A -s 10240 "tcp port 4080 and (((ip[2:2] 
 ```bash
 nc -zv repo.neo9.pro 9999
 ```
+
+## IPs
+
+Check public IP
+
+```bash
+curl ipinfo.io/ip
+```
