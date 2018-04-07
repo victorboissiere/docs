@@ -50,7 +50,9 @@ Then in *Manage Jenkins > Configure System* go to **Global pipeline library** an
 
 Save and reload the page to check for errors or successfull message:
 
-```Currently maps to revision: beaa49af21b269e3aa0bcc3b5b74d782f4d98ee9```.
+```
+Currently maps to revision: beaa49af21b269e3aa0bcc3b5b74d782f4d98ee9
+```
 
 
 ### Sample project
@@ -87,3 +89,15 @@ MainPipeline {
 ```
 
 If `This stage has no steps` error is displayed then something went wrong. Check for typo errors when using function libraries.
+
+## Groovy syntax
+
+```groovy
+// For loop
+list.each { echo it }
+
+// Default map values
+def foo = map.bar ?: 'default'
+```
+
+
