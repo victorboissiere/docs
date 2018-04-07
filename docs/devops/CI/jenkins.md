@@ -1,6 +1,6 @@
 ## Pipeline example
 
-This sample does not use the pipeline declarative syntax to use non blocking input message.
+This sample does not use the pipeline declarative syntax to allow non blocking input message.
 
 ```groovy
 stage('Build') {
@@ -46,9 +46,11 @@ First create SSH/User credentials for your private git repository in *Credential
 
 Then in *Manage Jenkins > Configure System* go to **Global pipeline library** and add your git repository.
 
-_Default version_: master (if you want a specific branch)
+<u>Default version:</u> master (if you want a specific branch)
 
-Save and reload the page to check for errors or successfull message `Currently maps to revision: beaa49af21b269e3aa0bcc3b5b74d782f4d98ee9`.
+Save and reload the page to check for errors or successfull message:
+
+```Currently maps to revision: beaa49af21b269e3aa0bcc3b5b74d782f4d98ee9```.
 
 
 ### Sample project
