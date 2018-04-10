@@ -27,7 +27,9 @@ gunzip -c filename.gz | psql dbname # Large database
 
 ## MongoDB
 
-`db.runCommand({ copydb:1, fromhost: '127.0.0.1', fromdb: 'db', todb:'db'})`
+```js
+db.runCommand({ copydb:1, fromhost: '127.0.0.1', fromdb: 'db', todb:'db'})`
+```
 
 ## ElasticSearch
 
