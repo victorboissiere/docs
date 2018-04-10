@@ -25,6 +25,10 @@ psql dbname < infile
 gunzip -c filename.gz | psql dbname # Large database
 ```
 
+## MongoDB
+
+`db.runCommand({ copydb:1, fromhost: '127.0.0.1', fromdb: 'db', todb:'db'})`
+
 ## ElasticSearch
 
 **Get number of primary shards on each nodes**
