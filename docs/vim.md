@@ -4,6 +4,9 @@ Very good documentation → [vim tips and tricks: registers](https://www.cs.ober
 
 - `"*y` copy current line/selection to clipboard register
 
+Use `:set paste` to avoid autoindent when pasting snippets.
+Then revert back using `:set nopaste`.
+
 ## Registers
 
 Very handy when you want to get back what you've --deleted--
