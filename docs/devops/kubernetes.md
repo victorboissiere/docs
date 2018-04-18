@@ -6,7 +6,7 @@ Check out [all in one guestbook](https://github.com/kubernetes/examples/blob/mas
 
 Persistent Volume Claim
 
-```yaml
+```yml
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -21,14 +21,14 @@ spec:
 
 **Usage**
 
-```yaml
+```yml
 volumes:
 - name: elasticsearch-logging
 	persistentvolumeclaim:
 	claimname: dev-elasticsearch
 ```
 
-```yaml
+```yml
 volumeMounts:
 	- name: elasticsearch-logging
 		moutnPath: /data
