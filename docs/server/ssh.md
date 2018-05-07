@@ -19,6 +19,18 @@ Small [project](https://github.com/victorboissiere/ssh-agent-setup) to help to p
 
 Set up an [ssh bastion proxy](https://blog.scottlowe.org/2015/11/21/using-ssh-bastion-host/)
 
+```bash
+function sshproxy()
+{
+  if [ $# -lt 1 ]; then
+    echo "Usage: $0 [host] [?USER]"
+  else
+    ssh -o ProxyCommand="ssh -W %h:%p ubuntu@host -i ~/.ssh/key.pem" ${2:='ubuntu'}@$1 -i ~/.ssh/key
+  fi
+}
+
+```
+
 ## Tunnel
 
 ```bash
