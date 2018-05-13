@@ -6,6 +6,20 @@ First **check** the file syntax using `sudo ifup --no-act br0`.
 
 Then safely restart with `sudo ifdown br0 && sudo ifup br0`
 
+## IPs
+
+IP address show
+
+```bash
+ip a s
+```
+
+IP route show
+
+```bash
+ip route s
+```
+
 ## Listen incoming request
 
 ```bash
