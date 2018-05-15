@@ -29,6 +29,10 @@ Very handy when you want to get back what you've --deleted--
 
 [Check out more examples](http://vim.wikia.com/wiki/Search_and_replace)
 
+## Autocompletion
+
+- `C-n`: Display autocomplete
+
 ## Editing a stream
 
 `:! find . | vim -`  in a shell get content and send it to vim then `:w filename` to save the file
