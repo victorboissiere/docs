@@ -15,7 +15,7 @@ sudo mv squashfs-root edit
 sudo cp /etc/resolv.conf edit/etc/
 # Mount important working dirs
 sudo mount --bind /dev/ edit/dev
-sudo chroot edit /bin/bash--excludo
+sudo chroot edit /bin/bash
 mount -t proc none /proc
 mount -t sysfs none /sys
 mount -t devpts none /dev/pts
