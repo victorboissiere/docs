@@ -45,4 +45,14 @@ CHANGED: disk=/dev/xvdf partition=1: start=4096 old: size=16773086,end=16777182 
 $ sudo resize2fs /dev/xvdf1
 ```
 
+```bash
+# List device
+ls /sys/class/scsi_device/
+# Send new scan
+sudo sh -c 'echo 1 > /sys/class/scsi_device/0\:0\:0\:0/device/rescan'
+# Increase partition size
+sudo growpart /dev/xvdf 1
+# Resize FS
+sudo resize2fs /dev/xvdf1
+```
 
