@@ -4,8 +4,14 @@
 export GOPATH=$HOME/go
 ```
 
-## Packages
+## Hot Reload
 
-- `hot reload`: https://github.com/handwritingio/autoreload
+[Gin project](https://github.com/codegangsta/gin)
+
+```bash
+go get github.com/codegangsta/gin
+$GOPATH/bin/gin run main.go
+```
+
 
 
