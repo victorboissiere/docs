@@ -16,5 +16,5 @@ blue() { echo -e "\033[00;34m$1\033[0m"; }
 ## Default arguments
 
 ```bash
-my_func() { echo "${1:='default'}" }
+my_func() { echo "${1-'default'}" }
  ```
