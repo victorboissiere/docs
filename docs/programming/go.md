@@ -5,6 +5,12 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ```
 
+## Build
+
+```bash
+go build -ldflags "-s -w"
+```
+
 ## Hot Reload
 
 [Gin project](https://github.com/codegangsta/gin)
