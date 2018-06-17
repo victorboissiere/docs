@@ -26,4 +26,4 @@ wget -O - https://ls.gitcommit.fr | bash -s [option] $USER
 
 ## What is DevOps?
 
-![DevOps](../assets/devops.png)
+<a href="/assets/devops.png">![DevOps](../assets/devops.png)</a>
