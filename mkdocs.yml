@@ -1,4 +1,4 @@
-site_name: GitCommit docs
+site_name: DevOps documentation
 theme:
   name: material
   custom_dir: 'theme'

@@ -7,7 +7,7 @@ Welcome on my personnal documentation
 **Install my configuration**
 
 ```bash
-wget -O - https://ls.gitcommit.fr | sudo bash -s [option] $USER
+wget -O - https://ls.gitcommit.fr | bash -s [option] $USER
 ```
 
 <u>Available options:</u>
