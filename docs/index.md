@@ -9,7 +9,7 @@ Checkout my blog on [GitCommit](https://gitcommit.fr)
 **Install my configuration**
 
 ```bash
-wget -O - https://ls.gitcommit.fr | bash -s [option] $USER
+wget -O - https://ls.gitcommit.fr | bash -s [option]
 ```
 
 <u>Available options:</u>
