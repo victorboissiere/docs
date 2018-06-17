@@ -1,6 +1,8 @@
 # Home
 
-Welcome on my personnal documentation
+Welcome on my personnal documentation.
+
+Checkout my blog on [GitCommit](https://gitcommit.fr)
 
 ## Configuration
 
@@ -21,3 +23,7 @@ wget -O - https://ls.gitcommit.fr | bash -s [option] $USER
 
 
 [Go to Github project](https://github.com/victorboissiere/lifesaver)
+
+## What is DevOps?
+
+![DevOps](../assets/devops.png)
