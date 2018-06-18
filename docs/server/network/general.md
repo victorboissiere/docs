@@ -6,6 +6,12 @@ First **check** the file syntax using `sudo ifup --no-act br0`.
 
 Then safely restart with `sudo ifdown br0 && sudo ifup br0`
 
+## Monitor input/output in real time
+
+```bash
+sudo iftop
+```
+
 ## IPs
 
 IP address show
