@@ -91,3 +91,13 @@ add_header 'Access-Control-Allow-Origin' '*' always;
 add_header 'Access-Control-Allow-Headers' 'Authorization,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type' always;
 add_header 'Access-Control-Allow-Methods' 'OPTIONS, POST, GET, PUT, PATCH, DELETE' always;
 ```
+
+## Default return
+
+```nginx
+location / {
+  add_header Content-Type text/plain;
+  return 200 "ok";
+}
+```
+
