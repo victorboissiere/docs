@@ -26,6 +26,14 @@ IP route show
 ip route s
 ```
 
+## Interfaces
+
+Bring interface up (Ubuntu 18, NetPlan)
+
+```
+sudo ip link set ens4 up
+```
+
 ## Ports
 
 **Check open ports on remove host**
