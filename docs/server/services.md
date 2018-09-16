@@ -25,6 +25,7 @@ systemctl list-unit-files
 - dns `#!bash dnsmasq --test`
 - haproxy `#!bash haproxy -c -V -f /etc/haproxy/haproxy.cfg`
 - lorotate `#!bash sudo logrotate -d /etc/logrotate.d/myfile`
+- nginx `#!bash sudo service nginx configtest`
 
 ## Create service
 
