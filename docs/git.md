@@ -41,3 +41,28 @@ function fetchDevelop()
   done
 }
 ```
+
+## Scripts utils
+
+List old big size file
+
+```bash
+git rev-list --objects --all \
+| git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' \
+| sed -n 's/^blob //p' \
+| sort --numeric-sort --key=2 \
+| cut -c 1-12,41- \
+| numfmt --field=2 --to=iec-i --suffix=B --padding=7 --round=nearest
+```
+
+Remove from history
+
+```bash
+git filter-branch --tree-filter 'rm -rf node_modules' --prune-empty HEAD
+git for-each-ref --format="%(refname)" refs/original/ | xargs -n 1 git update-ref -d
+echo node_modules/ >> .gitignore
+git add .gitignore
+git commit -m 'Removing node_modules from git history'
+git gc
+git push origin master --force
+```
