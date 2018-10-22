@@ -1,3 +1,11 @@
+## Init
+
+Helm with [service account](https://github.com/helm/helm/blob/master/docs/rbac.md).
+
+```bash
+helm init --service-account tiller --upgrade
+```
+
 ## Commands
 
 ```bash

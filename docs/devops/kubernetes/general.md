@@ -30,10 +30,3 @@ kubectl rollout history deployment/image-dashboard --revision=2
 kubectl rollout undo deployment/image-dashboard --to-revision=2
 ```
 
-## Helm
-
-Helm with [service account](https://github.com/helm/helm/blob/master/docs/rbac.md).
-
-```bash
-helm init --service-account tiller --upgrade
-```
