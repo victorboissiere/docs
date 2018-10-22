@@ -1,10 +1,8 @@
 ## Yaml files
 
-Kubernetes examples
-
-Check out [all in one guestbook](https://github.com/kubernetes/examples/blob/master/guestbook/all-in-one/guestbook-all-in-one.yaml)
-
 [K8S Cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+
+[API Spec](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.11/#deployment-v1-apps)
 
 ## Deployment
 
