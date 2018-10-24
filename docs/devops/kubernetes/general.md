@@ -4,6 +4,12 @@
 
 [API Spec](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.11/#deployment-v1-apps)
 
+## Get all status (terminated / restarted)
+
+```yaml
+kubectl get pod -o go-template='{{range.status.containerStatuses}}{{"Container Name: "}}{{.name}}{{"\r\nLastState: "}}{{.lastState}}{{end}}' name
+```
+
 ## Deployment
 
 CI Example for deployment
