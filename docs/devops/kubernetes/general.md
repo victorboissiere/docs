@@ -1,10 +1,14 @@
 ## Yaml files
 
-Kubernetes examples
-
-Check out [all in one guestbook](https://github.com/kubernetes/examples/blob/master/guestbook/all-in-one/guestbook-all-in-one.yaml)
-
 [K8S Cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+
+[API Spec](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.11/#deployment-v1-apps)
+
+## Get all status (terminated / restarted)
+
+```yaml
+kubectl get pod -o go-template='{{range.status.containerStatuses}}{{"Container Name: "}}{{.name}}{{"\r\nLastState: "}}{{.lastState}}{{end}}' name
+```
 
 ## Deployment
 
@@ -32,10 +36,3 @@ kubectl rollout history deployment/image-dashboard --revision=2
 kubectl rollout undo deployment/image-dashboard --to-revision=2
 ```
 
-## Helm
-
-Helm with [service account](https://github.com/helm/helm/blob/master/docs/rbac.md).
-
-```bash
-helm init --service-account tiller --upgrade
-```
