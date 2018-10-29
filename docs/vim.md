@@ -1,5 +1,13 @@
 Very good documentation → [vim tips and tricks: registers](https://www.cs.oberlin.edu/\~kuperman/help/vim/registers.html)
 
+
+```
+noremap ; l
+noremap l k
+noremap k j
+noremap j h
+```
+
 ## Clipboard
 
 - `"*y` copy current line/selection to clipboard register
