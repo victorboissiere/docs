@@ -10,6 +10,22 @@
 kubectl get pod -o go-template='{{range.status.containerStatuses}}{{"Container Name: "}}{{.name}}{{"\r\nLastState: "}}{{.lastState}}{{end}}' name
 ```
 
+## Secret container registry
+
+```yaml
+kubectl create secret docker-registry SECRET_NAME \
+  --docker-server=https://eu.gcr.io \
+  --docker-username=_json_key \
+  --docker-email=XX@XXX \
+  --docker-password="$(cat token.json)"
+```
+
+## GKE service account
+
+```yaml
+kubectl create clusterrolebinding USER_XXXX-cluster-admin-binding --clusterrole=cluster-admin --user=USER_XXXX@XX.com
+```
+
 ## Deployment
 
 CI Example for deployment
