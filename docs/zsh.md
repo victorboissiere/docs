@@ -18,3 +18,11 @@ blue() { echo -e "\033[00;34m$1\033[0m"; }
 ```bash
 my_func() { echo "${1-'default'}" }
  ```
+
+## Useful commands
+
+Diff two files
+
+```bash
+sdiff -l file1 file2 | cat -n | grep -v -e '($'
+```
