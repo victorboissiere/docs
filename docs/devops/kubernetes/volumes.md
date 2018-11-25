@@ -17,14 +17,14 @@ spec:
 
 **Usage**
 
-```yml
+```yaml
 volumes:
 - name: elasticsearch-logging
 	persistentvolumeclaim:
 	claimname: dev-elasticsearch
 ```
 
-```yml
+```yaml
 volumeMounts:
 	- name: elasticsearch-logging
 		moutnPath: /data
@@ -32,7 +32,7 @@ volumeMounts:
 
 **Stateful set** with volume claim templates
 
-```yml
+```yaml
 volumeClaimTemplates:
     - metadata:
         name: elasticsearch-logging
@@ -45,7 +45,7 @@ volumeClaimTemplates:
 
 ## Use a backup volume
 
-```yml
+```yaml
 apiVersion: v1
 kind: PersistentVolume
 metadata:

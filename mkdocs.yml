@@ -1,12 +1,14 @@
 site_name: DevOps documentation
+extra_css:
+  - css/syntax.css
 theme:
   name: material
   custom_dir: 'theme'
   palette:
-    primary: 'teal'
+    primary: 'indigo'
     accent: 'pink'
   logo:
-    icon: extension
+    icon: code
   feature:
     tabs: true
 repo_name: 'victorboissiere/docs'
@@ -26,10 +28,13 @@ markdown_extensions:
   - toc:
       permalink: true
   - footnotes
-  - codehilite
+  - codehilite:
+      guess_lang: false
+      use_pygments: true
   - admonition
   - meta
   - pymdownx.arithmatex
+  - pymdownx.superfences
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
@@ -42,7 +47,6 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde

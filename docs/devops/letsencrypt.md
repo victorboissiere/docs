@@ -1,4 +1,4 @@
-## DNS
+## Letsencrypt DNS
 
 ```
 sudo certbot certonly --manual -d 'domain.fr' --preferred-challenges dns

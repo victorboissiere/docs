@@ -1,56 +1,8 @@
-## Yaml files
+## Kubernetes links
 
 [K8S Cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
 [API Spec](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.11/#deployment-v1-apps)
-
-## Get all status (terminated / restarted)
-
-```yaml
-kubectl get pod -o go-template='{{range.status.containerStatuses}}{{"Container Name: "}}{{.name}}{{"\r\nLastState: "}}{{.lastState}}{{end}}' name
-```
-
-## Secret container registry
-
-```yaml
-kubectl create secret docker-registry SECRET_NAME \
-  --docker-server=https://eu.gcr.io \
-  --docker-username=_json_key \
-  --docker-email=XX@XXX \
-  --docker-password="$(cat token.json)"
-```
-
-## GKE service account
-
-```yaml
-kubectl create clusterrolebinding USER_XXXX-cluster-admin-binding --clusterrole=cluster-admin --user=USER_XXXX@XX.com
-```
-
-## Deployment
-
-CI Example for deployment
-
-```bash
-kubectl set image deployment/image-dashboard image-dashboard=gitcommit/k8s-image-dashboard:v1.0.4 --record
-# Check deployment success
-kubectl rollout status deployment/image-dashboard
-```
-
-By default Kubernetes sets the `spec.progressDeadlineSeconds` to 600 seconds so you may want to change it.
-
-List **rollout history**:
-
-```bash
-kubectl rollout history deployment/image-dashboard
-# Details
-kubectl rollout history deployment/image-dashboard --revision=2
-```
-
-**Revert** to a previous version:
-
-```bash
-kubectl rollout undo deployment/image-dashboard --to-revision=2
-```
 
 ## Add new user
 
