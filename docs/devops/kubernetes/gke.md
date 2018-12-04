@@ -18,6 +18,27 @@ kubectl create secret docker-registry SECRET_NAME \
   --docker-password="$(cat token.json)"
 ```
 
+For local use only
+
+``` bash
+ docker login -u _json_key -p "$(cat service_account_key.json)" https://eu.gcr.io
+```
+
+Change `credsStore` value to empty string to use plain text registry.
+
+You can also use different credHelpers (recommended).
+
+``` json
+{
+   "credHelpers": {
+            "coolregistry.com": ... ,
+            "gcr.io": "gcr",
+            "asia.gcr.io": "gcr",
+            ...
+      }
+}
+```
+
 ## Annotations and custom configuration
 
 ### Ingress Load balancer
