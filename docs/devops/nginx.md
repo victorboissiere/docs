@@ -101,3 +101,11 @@ location / {
 }
 ```
 
+## Proto Redirection
+
+
+```nginx
+if ($http_x_forwarded_proto = "http") {
+    return 301 https://$server_name$request_uri;
+}
+```
