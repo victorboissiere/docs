@@ -4,6 +4,12 @@
 
 [API Spec](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.11/#deployment-v1-apps)
 
+## Debug
+
+```bash
+kubectl run -i --tty --rm debug --image=busybox --restart=Never -- sh
+```
+
 ## Add new user
 
 Kubernetes does not allow to create user by itself but via certificates.
