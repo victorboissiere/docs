@@ -2,7 +2,9 @@
 
 Welcome on my personnal documentation.
 
-Checkout my blog on [GitCommit](https://gitcommit.fr)
+Checkout my Medium account on [GitCommit](https://gitcommit.fr)
+
+You can also read my [CV](https://cv.gitcommit.fr)
 
 ## Configuration
 
