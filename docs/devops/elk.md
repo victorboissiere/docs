@@ -15,3 +15,16 @@ filebeat.prospectors:
       fields: ['message']
       target: json
 ```
+
+## Storage read only unlock
+
+```
+ PUT _settings
+ {
+    "index": {
+      "blocks": {
+         "read_only_allow_delete": "false"
+      }
+    }
+ }
+ ```
