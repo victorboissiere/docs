@@ -61,6 +61,8 @@ location /url/ {
 
 ## SSL
 
+Check Mozilla recommandations: [https://ssl-config.mozilla.org/](https://ssl-config.mozilla.org/)
+
 ```nginx
 listen 443 ssl http2;
 listen [::]:443 ssl http2;
