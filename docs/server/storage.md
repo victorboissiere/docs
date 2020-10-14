@@ -2,6 +2,10 @@
 
 ` du -h --max-depth=1 | sort -n`
 
+or
+
+`ncdu /`
+
 ## IO
 
 ```bash
