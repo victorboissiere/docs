@@ -10,7 +10,6 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
     - navigation.expand
   icon:
     logo: material/code-tags
