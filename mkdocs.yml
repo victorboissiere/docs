@@ -7,23 +7,26 @@ theme:
   palette:
     primary: 'indigo'
     accent: 'pink'
-  logo:
-    icon: code
-  feature:
-    tabs: true
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+  icon:
+    logo: material/code-tags
 repo_name: 'victorboissiere/docs'
 repo_url: 'https://github.com/victorboissiere/docs'
 extra:
   social:
-    - type: 'github'
+    - icon: 'fontawesome/brands/github-alt'
       link: 'https://github.com/victorboissiere'
-    - type: 'twitter'
+    - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/victorboissiere'
-    - type: 'linkedin'
+    - icon: 'fontawesome/brands/linkedin'
       link: 'https://linkedin.com/in/victorboissiere'
-    - type: 'youtube'
+    - icon: 'fontawesome/brands/youtube'
       link: 'https://www.youtube.com/channel/UCgHlbMrsG2iBAguUQWbmD9Q'
-copyright: 'Copyright &copy; 2018 Victor Boissiere'
+copyright: 'Copyright &copy; 2021 Victor Boissiere'
 markdown_extensions:
   - toc:
       permalink: true

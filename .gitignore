@@ -1,3 +1,4 @@
 *.swo
 *.swp
 site
+.DS_STORE
